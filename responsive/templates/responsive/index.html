@@ -1,0 +1,900 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block navigation %}
+{% include 'navigation.html' %}
+{% endblock navigation %}
+
+{% block content %}
+<!-- Banner Start -->
+<div class="position-relative banner px-4 overflow-hidden">
+  <div class="container px-4 text-center">
+    <p class="fw-medium subheading mt-3">energie. renovierung. nachhaltigkeit</p>
+    <h1 class="heading text-black fw-bolder">Goodbye Energy, <br />Hallo Klimaschutz</h1>
+    <p class="fz-eighteen text-black" style="line-height: 210%">
+      Mit wenigen Klicks zu Deiner ganz persönlichen Energie-, Renovierungs-
+      & Nachhaltigkeitsberatung. <br />
+      Mithilfe unseres Simulations-Tools zu Deiner perfekten Sanierung.
+    </p>
+    <a href="">
+      <button class="banner_btn">Demo Starten</button>
+    </a>
+  </div>
+  
+  <!-- Overlay -->
+  <div  class="position-absolute d-md-block d-none" style="bottom: 0; left: 0px; z-index: -1"
+  >
+    <img src="{% static 'images/josh-calabrese-XXpbdU_31Sg-unsplash.png' %}" alt="overlay" />
+  </div>
+</div>
+        
+    <!-- Banner End -->
+
+    <!-- FÜR LAIEN & EXPERTEN Start -->
+    <div class="bottom__banner bg-black">
+      <div class="container px-4 text-center">
+        <p class="fz-eighteen text-white">
+          Ein Professionelles Programm für Jederman
+        </p>
+
+        <!-- heading -->
+        <h2 class="bb_heading fw-bold text-white">FÜR LAIEN & EXPERTEN</h2>
+
+        <!-- Desc -->
+        <p class="text-white fw-light fz-fifteen" style="line-height: 225%">
+          Energetische Sanierungs-, Nachhaltigkeits- und bauliche
+          Renovierungsmaßnahmen können mit unserem Online-Tool virtuell
+          simuliert werden. <br />
+          Dabei legen wir Wert auf Einfachheit, Schnelligkeit und
+          Erschwinglichkeit <br />
+          - ohne jemals Abstriche bei der Qualität der Ergebnisse zu machen.
+        </p>
+      </div>
+    </div>
+    <!-- FÜR LAIEN & EXPERTEN End -->
+
+    <!-- effektiv & effizient sanieren Start -->
+    <div class="effektiv" id="overview">
+      <div class="container px-4">
+        <!-- Heading -->
+        <div>
+          <p class="fz-eighteen fw-light" style="line-height: 150%">
+            digitization is our motivation <br />
+            anytime & anywhere
+          </p>
+
+          <h2 class="effektiv_heading fw-bold text-black">
+            effektiv & <br />
+            <span>effizient sanieren</span>
+          </h2>
+
+          <h3 class="effektiv_subheading text-black">
+            einfach + schnell + genaue Resultate
+          </h3>
+
+          <p class="fz-eighteen fw-light" style="line-height: 150%">
+            Energie- und Renovierungsberatung digitalisieren.
+          </p>
+        </div>
+
+        <!-- Card Layout Start -->
+        <div class="effektiv_layout">
+          <!-- Card -->
+          <div
+            class="effektiv_card mx-auto d-flex align-items-center flex-lg-row-reverse flex-column-reverse gap-5"
+            style="gap: 70px">
+            <div class="col">
+              <!-- Desc -->
+              <div class="pe-5">
+                <p class="ec_desc fw-light fz-fifteen">
+                  <span class="fz-eighteen fw-semibold"
+                    >Einfache Eingaben.</span
+                  >
+                  Durch die Eingabe grundlegender Informationen zu Deinem Gebäude ermöglicht unser entwickeltes
+                  Programm eine virtuelle Umsetzung energetischer Sanierungs- und baulicher Renovierungsmaßnahmen.
+                  Du kannst selbst eine umfassende Sanierung Deines Gebäudes spielerisch einfach durchführen.
+                  Eine persönliche Beratung ganz nach Deinen Wünschen.
+                </p>
+              </div>
+
+              <!-- Heading and desc box -->
+              <div class="mt-4">
+                <h3 class="ec__heading">Benutzerfreundlich</h3>
+
+                <p class="ec__subheading fw-semibold mt-2">
+                  klare Strukturen und keine komplexen Schritte
+                </p>
+              </div>
+
+              <!-- Heading and desc box -->
+              <div class="mt-4">
+                <h3 class="ec__heading">Virtuelle Umsetzung</h3>
+
+                <p class="ec__subheading fw-semibold mt-2">
+                  energetischer Sanierungs- und baulicher Renovierungsmaßnahmen
+                </p>
+              </div>
+            </div>
+
+            <div class="col smaller-image d-flex justify-content-center">
+              <img
+                src="{% static 'images/img_1_1.png' %}"
+                alt="Benutzerfreundlich-Image"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+
+          <!-- Card -->
+          <div
+            class="effektiv_card mx-auto d-flex align-items-center flex-lg-row flex-column-reverse gap-5"
+          >
+            <div class="col">
+              <!-- Desc -->
+              <div class="pe-5">
+                <p class="ec_desc fw-light fz-fifteen">
+                  <span class="fz-eighteen fw-semibold"
+                    >Schnelle Bearbeitung.</span
+                  >
+                  Durch die einfache Eingabe Deiner Adresse und nur weniger
+                  zusätzlicher Informationen sowie wenigen Klicks ermöglichen
+                  wir eine umfassende Beratung. Dank unserer 3D-Erfassung, einem
+                  hohen Automatisierungsgrad und intelligenten Datensätzen steht
+                  einer Bearbeitung Deiner energetischen Sanierung und baulichen
+                  Renovierung nichts mehr im Wege. Und das jederzeit und
+                  überall.
+                </p>
+              </div>
+
+              <!-- Heading and desc box -->
+              <div class="mt-4">
+                <h3 class="ec__heading">12 Minuten</h3>
+
+                <p class="ec__subheading fw-semibold mt-2">
+                  bis zur fertigen Beratung (durchschnittlich)
+                </p>
+              </div>
+
+              <!-- Heading and desc box -->
+              <div class="mt-4">
+                <h3 class="ec__heading">3D-Erfassung</h3>
+
+                <p class="ec__subheading fw-semibold mt-2">
+                  schnelle Erfassung der thermischen Hülle
+                </p>
+              </div>
+            </div>
+
+            <div class="col smaller-image d-flex justify-content-center">
+              <img src="{% static 'images/img_1_2.png' %}" alt="card" style="width: 100%" />
+            </div>
+          </div>
+
+          <!-- Card -->
+          <div
+            class="effektiv_card mx-auto d-flex align-items-center flex-lg-row-reverse flex-column-reverse gap-5">
+            <div class="col">
+              <!-- Desc -->
+              <div class="pe-5">
+                <p class="ec_desc fw-light fz-fifteen">
+                  <span class="fz-eighteen fw-semibold">Genaue Resultate.</span>
+                  Besser als jedes kostenlose Online-Tool und ebenso effektiv
+                  wie eine herkömmliche Energieberatung. Mithilfe unserer
+                  3D-Erfassung und Simulation, unterstützt durch eine
+                  integrierte Datenbank sowie innovative Datenstruktur, führen
+                  wir eine präzise Analyse deines Gebäudes durch. Unsere
+                  realistischen Ergebnisse basieren auf Algorithmen und einer
+                  sekundengenauen Simulation, nicht auf groben Schätzungen..
+                </p>
+              </div>
+
+              <!-- Heading and desc box -->
+              <div class="mt-4">
+                <h3 class="ec__heading">Simulation</h3>
+
+                <p class="ec__subheading fw-semibold mt-2">
+                  simulationsbasiert und keine Schätzwerte
+                </p>
+              </div>
+
+              <!-- Heading and desc box -->
+              <div class="mt-4">
+                <h3 class="ec__heading">31.5 Mio. Sekunden</h3>
+
+                <p class="ec__subheading fw-semibold mt-2">
+                  simuliert jede Sekunde des Jahres
+                </p>
+              </div>
+            </div>
+
+            <div class="col smaller-image d-flex justify-content-center">
+              <img
+                src="{% static 'images/img_1_3.png' %}"
+                alt="Benutzerfreundlich-Image"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Card Layout End -->
+      </div>
+    </div>
+    <!-- effektiv & effizient sanieren End -->
+
+    <!-- simulation & orange Start -->
+    <div class="simulation">
+      <div class="container px-4">
+        <!-- Heading -->
+        <div class="text-center">
+          <p class="fz-eighteen fw-light text-black">it is what it is</p>
+
+          <h2 class="section_heading fw-light">
+            simulation & <span class="fw-bold">orange</span>
+          </h2>
+        </div>
+
+        <!-- Content Wrapper Start -->
+        <div
+          class="row simulation-content flex-lg-row flex-column-reverse gap-5 gap-lg-0"
+        >
+          <!-- Left -->
+          <div class="col-lg-6">
+            <h5 class="fz-eighteen fw-medium fz-fifteen">
+              Digitalisierung der klassischen Beratung mit Orange-Simulation
+            </h5>
+
+            <p class="fw-light mt-4 fz-fifteen">
+              Mit einer benutzerfreundlichen Oberfläche und nur wenigen Eingabefunktionen kannst du deine Modernisierung virtuell durchführen.<br/>
+              Folgende Schritte müssen bearbeitet werden:
+            </p>
+
+            <!-- Content -->
+            <div class="mt-5">
+              <!-- Item -->
+              <div class="d-flex align-items-center gap-2">
+                <img
+                  src="{% static 'images/play-icon.svg' %}"
+                  alt="play-icon"
+                  class="play-icon"
+                />
+
+                <p class="fw-light m-0 p-0 fz-fifteen">
+                  Eingabe der Adresse für die 3D-Erfassung
+                </p>
+              </div>
+
+              <!-- Item -->
+              <div class="d-flex align-items-center gap-2 mt-4">
+                <img
+                  src="{% static 'images/play-icon.svg' %}"
+                  alt="play-icon"
+                  class="play-icon"
+                />
+
+                <p class="fw-light m-0 p-0 fz-fifteen">
+                  Basisinformationen zum Gebäude eingeben
+                </p>
+              </div>
+
+              <!-- Item -->
+              <div class="d-flex align-items-center gap-2 mt-4">
+                <img
+                  src="{% static 'images/play-icon.svg' %}"
+                  alt="play-icon"
+                  class="play-icon"
+                />
+
+                <p class="fw-light m-0 p-0 fz-fifteen">
+                  Verbrauchswerte für Heizung und Strom ermitteln
+                </p>
+              </div>
+
+              <!-- Item -->
+              <div class="d-flex align-items-center gap-2 mt-4">
+                <img
+                  src="{% static 'images/play-icon.svg' %}"
+                  alt="play-icon"
+                  class="play-icon"
+                />
+
+                <p class="fw-light m-0 p-0 fz-fifteen">
+                  Ergebnisse der Beratung simulieren lassen
+                </p>
+              </div>
+            </div>
+
+            <!-- Button -->
+            <div class="mt-5">
+              <a
+                href="{% url 'solution' %}"
+                class="simulation-link text-decoration-none fw-light themeColor fz-fifteen"
+              >
+                mehr erfahren >>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right -->
+          <div class="col-lg-6">
+            <div class="swiper mySwiper pb-5">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="{% static 'images/laptop-1.png' %}"
+                    alt="laptop_image"
+                    style="width: 100%"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="{% static 'images/laptop-2.png' %}"
+                    alt="laptop_image"
+                    style="width: 100%"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="{% static 'images/laptop-3.jpg' %}"
+                    alt="laptop_image"
+                    style="width: 100%"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="{% static 'images/laptop-4.png' %}"
+                    alt="laptop_image"
+                    style="width: 100%"
+                  />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Content Wrapper End -->
+      </div>
+    </div>
+    <!-- simulation & orange End -->
+
+    <!-- Demo Section Start -->
+    <div class="demo bg-black text-center position-relative">
+      <div class="container px-4">
+        <!-- heading -->
+        <h2 class="bb_heading fw-bold text-white">
+          Starte unsere Demoversion. <br />
+          Kostenlos!
+        </h2>
+
+        <!-- Desc -->
+        <p class="text-white fw-light fz-fifteen" style="line-height: normal">
+          Aktuell kannst du unser Simulationstool als Demoversion gratis testen.<br/>
+          Dabei musst du berücksichtigen, dass noch nicht alle Funktionen freigeschaltet sind und zur Verfügung stehen.<br/>
+          Viel Spaß beim Testen!
+        </p>
+      </div>
+
+      <a href="">
+        <button class="banner_btn">Demo Starten</button>
+      </a>
+
+      <!-- Circle -->
+      <div class="circle"></div>
+    </div>
+    <!-- Demo Section End -->
+
+    <!-- sustainability Section Start -->
+    <div class="sustainability">
+      <div class="container px-4">
+        <!-- Heading -->
+        <div class="text-center">
+          <p class="fz-eighteen fw-light text-black">
+            ecofriendly is the new sexy
+          </p>
+
+          <h2 class="section_heading fw-light">
+            orange & <span class="fw-bold">sustainability.</span>
+          </h2>
+        </div>
+
+        <!-- Content -->
+        <div
+          class="sustainability_content row flex-lg-row flex-column-reverse gap-lg-0 gap-5"
+        >
+          <!-- Left -->
+          <div class="col-lg-6">
+            <h5 class="fz-eighteen fw-medium d-md-block d-none">
+              Tool-Erweiterung: Nachhaltigkeitsberatung
+            </h5>
+
+            <p class="fw-light mt-4 fz-fifteen">
+              Unsere Innovation ermöglicht es dir, umweltbewusste Lösungen und individuelle<br/>
+              Nachhaltigkeitsziele zu erreichen. Wir können dich effizient und flexibel<br/>
+              unterstützen, um nachhaltige Praktiken in dein Leben oder deine Gebäude zu<br/>
+              integrieren.
+            </p>
+
+            <!-- Content -->
+            <div class="mt-4">
+              <!-- Item -->
+              <div class="d-flex align-items-center gap-2">
+                <img
+                  src="{% static 'images/play-icon.svg' %}"
+                  alt="play-icon"
+                  class="play-icon"
+                />
+
+                <p class="fw-light m-0 p-0 fz-fifteen">Ökobilanzierung</p>
+              </div>
+
+              <!-- Item -->
+              <div class="d-flex align-items-center gap-2 mt-4">
+                <img
+                  src="{% static 'images/play-icon.svg' %}"
+                  alt="play-icon"
+                  class="play-icon"
+                />
+
+                <p class="fw-light m-0 p-0 fz-fifteen">ESG-Bewertung</p>
+              </div>
+
+              <!-- Item -->
+              <div class="d-flex align-items-center gap-2 mt-4">
+                <img
+                  src="{% static 'images/play-icon.svg' %}"
+                  alt="play-icon"
+                  class="play-icon"
+                />
+
+                <p class="fw-light m-0 p-0 fz-fifteen">CRREM-Analyse</p>
+              </div>
+
+              <!-- Item -->
+              <div class="d-flex align-items-center gap-2 mt-4">
+                <img
+                  src="{% static 'images/play-icon.svg' %}"
+                  alt="play-icon"
+                  class="play-icon"
+                />
+
+                <p class="fw-light m-0 p-0 fz-fifteen">
+                  Ergebnisse der Beratung simulieren lassen
+                </p>
+              </div>
+
+              <!-- Item -->
+              <div class="d-flex align-items-center gap-2 mt-4">
+                <p
+                  class="fw-light m-0 p-0 fz-fifteen"
+                  style="font-size: 15px; color: #767676"
+                >
+                  *) Aktuell noch nicht in der Demoversion verfügbar.
+                </p>
+              </div>
+            </div>
+
+            <!-- Button -->
+            <div class="mt-4">
+              <a
+                href="{% url 'sustainability' %}"
+                class="simulation-link text-decoration-none fw-light themeColor fz-fifteen"
+              >
+                mehr erfahren >>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right -->
+          <div
+            class="col-lg-6 d-none d-md-flex justify-content-center justify-content-lg-end"
+          >
+            <img
+              src="{% static 'images/sustain-image.svg' %}"
+              alt="sustainability_image"
+              class="sustain_image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- sustainability Section End -->
+
+    <!-- Icons Section Start -->
+    <div class="icons">
+      <div class="container px-4" id="solutions">
+        <!-- Heading -->
+        <div class="text-center">
+          <p class="fz-eighteen fw-light text-black">
+            everything you need is orange
+          </p>
+
+          <h2 class="section_heading fw-light">
+            findings & <span class="fw-bold">solutions.</span>
+          </h2>
+        </div>
+
+        <!-- Icons Container -->
+        <div class="icons_container">
+          <!-- Card -->
+          <div class="col icon_card">
+            <div
+              class="icon pink d-flex align-items-center justify-content-center"
+            >
+              <i class="fa-solid fa-bolt-lightning"></i>
+            </div>
+
+            <p class="text-black ic_title">Energiebilanz</p>
+          </div>
+
+          <!-- Card -->
+          <div class="col icon_card">
+            <div
+              class="icon pink d-flex align-items-center justify-content-center"
+            >
+              <i class="fa-solid fa-cloud"></i>
+            </div>
+
+            <p class="text-black ic_title">CO<sub>2</sub>-Bilanz</p>
+          </div>
+
+          <!-- Card -->
+          <div class="col icon_card">
+            <div
+              class="icon blue d-flex align-items-center justify-content-center"
+            >
+              <i class="fa-regular fa-lightbulb"></i>
+            </div>
+
+            <p class="text-black ic_title">
+              Sanierungs- <br />
+              maßnahmen
+            </p>
+          </div>
+
+          <!-- Card -->
+          <div class="col icon_card">
+            <div
+              class="icon blue d-flex align-items-center justify-content-center"
+            >
+              <i class="fa-solid fa-user-astronaut"></i>
+            </div>
+
+            <p class="text-black ic_title">
+              Renovierungs- <br />
+              maßnahmen
+            </p>
+          </div>
+
+          <!-- Card -->
+          <div class="icon_card col">
+            <div
+              class="icon yellow d-flex align-items-center justify-content-center"
+            >
+              <i class="fa-regular fa-circle-user"></i>
+            </div>
+
+            <p class="text-black ic_title">Lebenszykluskosten</p>
+          </div>
+
+          <!-- Card -->
+          <div class="icon_card col">
+            <div
+              class="icon yellow d-flex align-items-center justify-content-center"
+            >
+              <i class="fa-solid fa-database"></i>
+            </div>
+
+            <p class="text-black ic_title">Kostenanalyse</p>
+          </div>
+
+          <!-- Card -->
+          <div class="icon_card col">
+            <div
+              class="icon violet d-flex align-items-center justify-content-center"
+            >
+              <i class="fa-solid fa-hand-holding-droplet"></i>
+            </div>
+
+            <p class="text-black ic_title">Einsparungen</p>
+          </div>
+
+          <!-- Card -->
+          <div class="icon_card col">
+            <div
+              class="icon violet d-flex align-items-center justify-content-center"
+            >
+              <i class="fa-solid fa-piggy-bank"></i>
+            </div>
+
+            <p class="text-black ic_title">Fördermittel</p>
+          </div>
+
+          <!-- Card -->
+          <div class="icon_card col">
+            <div
+              class="icon green d-flex align-items-center justify-content-center"
+            >
+              <i class="fa-solid fa-solar-panel"></i>
+            </div>
+
+            <p class="text-black ic_title">
+              Erneuerbare <br />
+              Energien
+            </p>
+          </div>
+
+          <!-- Card -->
+          <div class="icon_card col lessOpacity">
+            <div
+              class="icon green d-flex align-items-center justify-content-center"
+            >
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+
+            <p class="text-black ic_title">Ökobilanz*</p>
+          </div>
+
+          <!-- Card -->
+          <div class="icon_card col lessOpacity">
+            <div
+              class="icon green d-flex align-items-center justify-content-center"
+            >
+              <i class="fa-solid fa-clipboard-list"></i>
+            </div>
+
+            <p class="text-black ic_title">ESG-Bewertung*</p>
+          </div>
+
+          <!-- Card -->
+          <div class="icon_card col lessOpacity">
+            <div
+              class="icon green d-flex align-items-center justify-content-center"
+            >
+              <i class="fa-solid fa-chart-column"></i>
+            </div>
+
+            <p class="text-black ic_title">CRREM-Analyse*</p>
+          </div>
+        </div>
+
+        <!-- Icons Content -->
+        <div class="icons-content text-center">
+          <h4 class="ic_subhead">energie. renovierung. nachhaltigkeit</h4>
+
+          <p class="ic_desc fw-light mt-4 fz-fifteen">
+            In unserem Tool sind derzeit 12 Lösungsansätze integriert, die jedoch kontinuierlich erweitert werden.<br/>
+            Die Ergebnisse werden dabei individuell auf dein Gebäude zugeschnitten.
+          </p>
+
+          <p class="fw-light smaller-text" style="color: #767676">
+            *) Aktuell noch nicht in der Demoversion verfügbar.
+          </p>
+
+          <!-- Button -->
+          <div class="mt-1">
+            <a
+              href="{% url 'solution' %}"
+              class="simulation-link text-decoration-none fw-light themeColor fz-fifteen"
+            >
+              mehr erfahren >>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Icons Section End -->
+
+    <!-- Fresh News Start -->
+    <div class="fresh_news paddingBigY">
+      <div class="container px-4">
+        <!-- Heading -->
+        <div class="text-center">
+          <p class="fz-eighteen fw-light text-black">
+            be up to date with our new blog
+          </p>
+
+          <h2 class="section_heading fw-light">
+            fresh new <span class="fw-bold">news.</span>
+          </h2>
+        </div>
+
+        <!-- Contents -->
+        <div
+          class="d-flex align-items-lg-center justify-content-between flex-lg-row flex-column gap-lg-2 gap-5 mt-lg-5"
+        >
+          <!-- Left -->
+          <div class="col-lg-4">
+            <h4
+              class="fw-bold text-uppercase d-lg-block d-none"
+              style="line-height: 150%; font-size: 19px"
+            >
+              a news <br />
+              <span class="themeColor">perspective.</span>
+            </h4>
+
+            <p class="fw-light mt-4 fz-fifteen">
+              Persönlicher Blog über aktuelle Themen aus <br/>
+              unserer Schreibwerkstatt.
+            </p>
+
+            <!-- Button -->
+            <div class="mt-1">
+              <a
+                href="{% url 'newspaper' %}"
+                class="simulation-link text-decoration-none fw-light themeColor fz-fifteen"
+              >
+                mehr erfahren >>
+              </a>
+            </div>
+          </div>
+
+          <!-- Middle -->
+          <div
+            class="col-lg-4 d-flex align-items-center justify-content-center"
+          >
+            <img
+              src="{% static 'images/fresh-news-image.jpg' %}"
+              alt="fresh_news"
+              style="width: 100%"
+              class="fresh_news_image"
+            />
+          </div>
+
+          <!-- Right -->
+          <div class="col-lg-4">
+            <p class="fw-light ps-md-5 fz-fifteen" style="line-height: 180%">
+              Orange hält dich kontinuierlich über die Themen Energie, Renovierung und Nachhaltigkeit auf dem neuesten Stand.
+              Unsere Artikel werden persönlich von unserem Team verfasst. Wir nehmen gerne deine Anregungen entgegen,
+              wenn du dich für ein bestimmtes Thema besonders interessierst.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fresh News End -->
+
+    <!-- Climate Change Start -->
+    <div class="climate_change">
+      <div class="container px-4 text-center">
+        <h2 class="cc_title">
+          sanieren für den <span class="fw-bold themeColor">Klimaschutz.</span>
+        </h2>
+
+        <p class="fw-light fz-eighteen mt-4">
+          Unterstütze unser aufstrebendes Startup in seinen Anfängen! Dein Beitrag macht einen Unterschied.<br/>
+          Gerne kannst du unsere Finanzierung durch eine kleine Spende stärken!
+        </p>
+
+        <a href="#">
+          <button class="banner_btn">Unterstütze Uns!</button>
+        </a>
+
+        <p class="fw-light mt-5" style="font-size: 14px">
+          Vielen Dank für deine Unterstützung und dein Vertrauen in den Erfolg von Orange-Simulation.
+        </p>
+      </div>
+    </div>
+    <!-- Climate Change End -->
+
+    <!-- Faqs Start -->
+    <div class="faqs paddingBigY">
+      <div class="container px-4">
+        <!-- Heading -->
+        <div class="text-center" style="margin-bottom: 70px">
+          <h2 class="section_heading fw-light">
+            <span class="fw-bold">faq.</span>
+          </h2>
+        </div>
+
+        <!-- Content -->
+        <div class="faq_content">
+          <!-- Card -->
+          <div class="faq_card active">
+            <h4 class="faq_title fw-semibold">Wie findet unsere Beratung statt?</h4>
+
+            <div class="faq_content">
+              <p class="faq_desc"></p>
+              <p class="faq_desc">
+                Die Beratung auf unserer digitalen Plattform bietet dir eine bequeme und
+                effiziente Möglichkeit, deine Sanierungsprojekte voranzutreiben.
+                So einfach funktioniert's:
+              </p>
+              <p class="faq_desc">
+                <b>Anmeldung auf der Plattform:</b> Registriere dich einfach auf unserer benutzerfreundlichen Plattform.<br>
+                <b>Gebäudeinformationen:</b> Gib Informationen zu deinem Gebäude und deinem aktuellen Energieverbrauch ein.<br>
+                <b>Maßgeschneiderte Analyse:</b> Erhalte eine detaillierte Analyse und individuelle Empfehlungen für Sanierungsmaßnahmen.<br>
+              </p>
+            </div>
+          </div>
+
+          <!-- Card -->
+          <div class="faq_card">
+            <h4 class="faq_title fw-semibold">Welche Vorteile bietet eine digitale Beratung?</h4>
+
+            <div class="faq_content">
+              <p class="faq_desc"></p>
+              <p class="faq_desc">
+                Unsere digitale Beratung überzeugt durch zahlreiche Vorteile:
+              </p>
+              <p class="faq_desc">
+                <b>Schnell und günstig:</b> Spare Zeit und Geld im Vergleich zu einer herkömmlichen Beratung.<br>
+                <b>Flexibel und einfach:</b> Nutze unsere Plattform jederzeit und von überall. Die Bedienung ist kinderleicht.<br>
+                <b>Schnelle Ergebnisse:</b> Erhalte deine Analyse und Empfehlungen zügig und ohne lange Wartezeiten.<br>
+                <b>Individuelle Beratung:</b> Profitiere von einer maßgeschneiderten Beratung, die auf deine spezifischen Bedürfnisse abgestimmt ist.<br>
+                <b>Hohe Qualität:</b> Unsere Beratung steht der Qualität einer herkömmlichen Energieberatung in nichts nach.<br>
+              </p>
+            </div>
+          </div>
+
+          <!-- Card -->
+          <div class="faq_card">
+            <h4 class="faq_title fw-semibold">Ist diese Art der Energieberatung förderfähig?</h4>
+
+            <div class="faq_content">
+              <p class="faq_desc"></p>
+              <p class="faq_desc">
+                Leider ist unsere Energieberatung derzeit nicht nach den Richtlinien der BAFA förderfähig.
+                Dies liegt daran, dass sie nicht auf der Norm DIN 18599 basiert,
+                sondern auf einer innovativen Simulationstechnik.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card -->
+          <div class="faq_card">
+            <h4 class="faq_title fw-semibold">Ist die digitale Energieberatung für jeden Gebäudetyp geeignet?</h4>
+
+            <div class="faq_content">
+              <p class="faq_desc"></p>
+              <p class="faq_desc">
+                Unsere digitale Energieberatung ist derzeit für Einfamilien- und Mehrfamilienhäuser konzipiert.
+                In Kürze wird unser Tool auch für Gewerbeimmobilien und öffentliche Gebäude verfügbar sein.
+              </p>
+            </div>
+          </div>
+
+        <!-- Card -->
+          <div class="faq_card">
+            <h4 class="faq_title fw-semibold">Was kostet die Online-Beratung?</h4>
+
+            <div class="faq_content">
+              <p class="faq_desc"></p>
+              <p class="faq_desc">
+                Derzeit bieten wir unsere erste Demoversion kostenlos an. So kannst du unsere Plattform und die Beratungsleistungen unverbindlich testen.
+                Die Kosten für die Vollversion, die in Kürze verfügbar sein wird, stehen noch nicht fest.
+                Wir versichern dir jedoch, dass die Preise fair und erschwinglich sein werden,
+                um jedem die Möglichkeit einer hochwertigen Energieberatung zu bieten.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card -->
+          <div class="faq_card">
+            <h4 class="faq_title fw-semibold">Kann ich Verbesserungsvorschläge, Wünsche und Ideen einbringen?</h4>
+
+            <div class="faq_content">
+              <p class="faq_desc"></p>
+              <p class="faq_desc">
+                Deine Meinung ist uns immer wichtig! Wir sind stets offen für Feedback und Anregungen,
+                um unsere digitale Beratung weiter zu verbessern.
+              </p>
+              <p class="faq_desc">
+                Teile uns gerne deine Verbesserungsvorschläge, Wünsche und Ideen unter
+                <br><a href="mailto:support@orange-simulation.com">support@orange-simulation.com</a> <br>
+                mit.
+              </p>
+              <p class="faq_desc">
+                <b>Vielen Dank für Deine Unterstützung!</b>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Faqs End -->
+
+    <!-- Footer Start -->
+{% endblock content %}
+{% block footer %}
+{% include 'footer.html' %}
+{% endblock footer %}

@@ -1,0 +1,55 @@
+{% load static %}
+<footer>
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="col-lg-4 footer_overview">
+                <h6>Übersicht</h6>
+                <ul>
+                    <li><a href="{% url 'index' %}#overview">Übersicht</a></li>
+                    <li><a href="{% url 'index' %}">Unterstützung</a></li>
+                    <li><a href="">Programm starten</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 footer_overview">
+                <h6>Navigation</h6>
+                <ul>
+                    <li><a href="{% url 'index' %}">Startseite</a></li>
+                    <li><a href="{% url 'solution' %}">Loesung</a></li>
+                    <li><a href="{% url 'energy' %}">Sanieren</a></li>
+                    <li><a href="{% url 'sustainability' %}">Nachhaltigkeit</a></li>
+                    <li><a href="{% url 'prices' %}">Preise</a></li>
+                    <li><a href="{% url 'newspaper' %}">News</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 footer_overview">
+                <h6>Orange Simulation</h6>
+                <ul>
+                    <li><a href="{% url 'contact' %}">Kontakt</a></li>
+                    <li><a href="{% url 'impressum' %}">Impressum</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 footer_social">
+                <ul>
+                    <li><a href="#" aria-hidden="true"> <i class="fa-brands fa-instagram"></i></a></li>
+                    <li> <a href="#" aria-hidden="true"> <i class="fa-brands fa-twitter"></i> </a></li>
+                    <li> <a href="#" aria-hidden="true"> <i class="fa-brands fa-facebook-f"></i> </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 footer_copyright">
+                <ul>
+                    <li>Copyright © 2024 Orange Simulation. All rights reserved.</li>
+                    <li><span>/</span></li>
+                    <li><a href="{% url 'privacy' %}" aria-hidden="true">Privacy</a></li>
+                    <li><span>/</span></li>
+                    <li><a href="{% url 'terms_of_use' %}" aria-hidden="true">Terms of Use</a></li>
+                    <li><span>/</span></li>
+                    <li><a href="{% url 'cookies' %}" aria-hidden="true">Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

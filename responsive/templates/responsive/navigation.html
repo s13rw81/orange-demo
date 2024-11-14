@@ -1,0 +1,32 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg fixed-top bg-light">
+    <div class="container-fluid">
+        <!-- left side-->
+        <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'images/logo-new.svg' %}" alt="Orange Simulation" /></a>
+
+        <!-- right side-->
+        <ul class="navbar-nav  justify-content-between">
+            <li class="nav-item pe-4"><a href="{% url 'index' %}" class="nav-link {% if request.path == '/index/' %}active-orange{% endif %}">Startseite</a></li>
+            <li class="nav-item pe-4"><a href="{% url 'solution' %}" class="nav-link {% if request.path == '/solution/' %}active-orange{% endif %}">Loesung</a></li>
+            <li class="nav-item pe-4"><a href="{% url 'energy' %}" class="nav-link {% if request.path == '/energy/' %}active-orange{% elif request.path == '/construction/' %}active-orange{% endif %}">Sanierung</a></li>
+            <li class="nav-item pe-4"><a href="{% url 'sustainability' %}" class="nav-link {% if request.path == '/sustainability/' %}active-orange{% endif %}">Nachhaltigkeit</a></li>
+            <li class="nav-item pe-4"><a href="{% url 'prices' %}" class="nav-link {% if request.path == '/sustainability/' %}active-orange{% endif %}">Preise</a></li>
+            <li class="nav-item pe-4"><a href="{% url 'newspaper' %}" class="nav-link {% if request.path == '/newspaper/' %}active-orange{% endif %}">News</a></li>
+            {% if user.is_authenticated %}
+            <li class="nav-item pe-4 dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="">Neues Projekt</a></li>
+                    <li><a class="dropdown-item" href="">Projekte</a></li>
+                    <li><a class="dropdown-item" href="">Einstellungen</a></li>
+                    <li><a class="dropdown-item" href="">Logout</a></li>
+                </ul>
+            </li>
+            <li class="nav-item pe-4"><a href="" class="btn btn-primary me-3" role="button" aria-disabled="true">Demo Starten</a></li>
+            {% else %}
+            <li class="nav-item pe-4"><a href="" class="nav-link {% if request.path == '/login/' %}active{% endif %}">Login</a></li>
+            <li class="nav-item pe-4"><a href="" class="btn btn-primary me-3" role="button" aria-disabled="true">Demo Starten</a></li>
+            {% endif %}
+        </ul>
+    </div>
+</nav>

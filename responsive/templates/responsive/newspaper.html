@@ -1,0 +1,246 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block navigation %}
+{% include 'navigation.html' %}
+{% endblock navigation %}
+{% block content %}
+<!-- Navbar End -->
+
+<!-- News Banner Start -->
+<div class="news_banner">
+  <div class="container">
+    <h1 class="nb_heading">
+      a news <br />
+      perspective: <br />
+      <span>a green opportunity</span>
+    </h1>
+  </div>
+</div>
+<!-- News Banner End -->
+
+<!-- Fresh News Start -->
+<div class="fresh_new_news paddingBigY">
+  <div class="container px-4">
+    <!-- Heading -->
+    <div class="text-center">
+      <p class="fz-eighteen fw-light text-black">
+        be up to date with our new blog
+      </p>
+
+      <h2 class="section_heading fw-light">
+        fresh new <span class="fw-bold">news.</span>
+      </h2>
+    </div>
+
+    <!-- Content -->
+    <div
+      class="fnn_content d-flex align-items-lg-center flex-lg-row flex-column gap-lg-0 gap-5"
+    >
+      <!-- Left Side -->
+      <div class="col-lg-5">
+        <h2 class="fnnc_heading d-block d-md-none d-block">todays news</h2>
+
+        <p class="fw-light text-black mt-3" style="font-size: 15px">
+          Aktuelle Nachrichten aus dem Bereichen
+          <br class="d-lg-block d-none" />
+          Energie, Renovierung & Nachhaltigkeit.
+          <br class="d-lg-block d-none" />
+          <span class="fw-medium">aktuell und persönlich.</span>
+        </p>
+      </div>
+
+      <!-- Left Side -->
+      <div
+        class="col-lg-7 d-flex align-items-center justify-content-between flex-md-row flex-column news_card_120"
+      >
+        <!-- Card -->
+        <div class="col fnnc_card">
+          <img
+            src="{% static 'images/news-1.png' %}"
+            alt="news-Image"
+            style="width: 100%"
+          />
+
+          <div class="fnnc_card_content bg-white">
+            <h4 class="fnnc_card_heading">Sanierungsleitfaden</h4>
+
+            <p class="fw-light" style="font-size: 14px">
+              Hier findest du einen guten Leitfaden für deine Haussanierung.
+            </p>
+
+            <a
+              href="#"
+              class="fw-light themeColor text-decoration-none"
+              style="font-size: 15px"
+            >
+              weiterlesen >>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div class="col fnnc_card">
+          <img
+            src="{% static 'images/news-2.png' %}"
+            alt="news-Image"
+            style="width: 100%"
+          />
+
+          <div class="fnnc_card_content bg-white">
+            <h4 class="fnnc_card_heading">Aktuelle Förderungen KfW</h4>
+
+            <p class="fw-light" style="font-size: 14px">
+              Übersicht zu den Fördermöglichkeiten für Bestandsgebäude.
+            </p>
+
+            <a
+              href="#"
+              class="fw-light themeColor text-decoration-none"
+              style="font-size: 15px"
+            >
+              weiterlesen >>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fresh News End -->
+
+<!-- Demo Section Start -->
+<div class="demo bg-black text-center position-relative">
+  <div class="container px-4">
+    <!-- heading -->
+    <h2 class="bb_heading fw-bold text-white">
+      Starte unsere Demoversion. <br />
+      Kostenlos!
+    </h2>
+
+    <!-- Desc -->
+    <p class="text-white fw-light" style="line-height: normal">
+      Aktuell kannst du unser Simulationstool als Demoversion gratis testen.<br/>
+      Dabei musst du berücksichtigen, dass noch nicht alle Funktionen freigeschaltet sind und zur Verfügung stehen.<br/>
+      Viel Spaß beim Testen!
+    </p>
+  </div>
+
+  <a href="">
+    <button class="banner_btn">Demo Starten</button>
+  </a>
+
+  <!-- Circle -->
+  <div class="circle"></div>
+</div>
+<!-- Demo Section End -->
+
+<!-- News Cards -->
+<div class="news_cards_second paddingBigY">
+  <div class="container">
+    <div
+      class="d-flex justify-content-between flex-lg-nowrap flex-wrap news_card_120"
+    >
+      <!-- Card -->
+      <div class="col fnnc_card">
+        <img
+          src="{% static 'images/news-3.png' %}"
+          alt="news-Image"
+          style="width: 100%"
+        />
+
+        <div class="fnnc_card_content bg-white">
+          <h4 class="fnnc_card_heading">Aktuelle Förderungen BAFA.</h4>
+
+          <p class="fw-light" style="font-size: 14px">
+            Welche Förderungen gibt es für energetische Sanierungen.
+          </p>
+
+          <a
+            href="#"
+            class="fw-light themeColor text-decoration-none"
+            style="font-size: 15px"
+          >
+            weiterlesen >>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card -->
+      <div class="col fnnc_card">
+        <img
+          src="{% static 'images/news-4.png' %}"
+          alt="news-Image"
+          style="width: 100%"
+        />
+
+        <div class="fnnc_card_content bg-white">
+          <h4 class="fnnc_card_heading">Pause muss sein.</h4>
+
+          <p class="fw-light" style="font-size: 14px">
+            Man kann nict nur arbeiten. Nimm dir auch Zeit für dich selbst.
+          </p>
+
+          <a
+            href="#"
+            class="fw-light themeColor text-decoration-none"
+            style="font-size: 15px"
+          >
+            weiterlesen >>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card -->
+      <div class="col fnnc_card">
+        <img
+          src="{% static 'images/news-5.png' %}"
+          alt="news-Image"
+          style="width: 100%"
+        />
+
+        <div class="fnnc_card_content bg-white">
+          <h4 class="fnnc_card_heading">GEG 2024 Änderungen.</h4>
+
+          <p class="fw-light" style="font-size: 14px">
+            Welche Änderungen bringt das neu GEG mit sich und was ist anders
+            als zuvor?
+          </p>
+
+          <a
+            href="#"
+            class="fw-light themeColor text-decoration-none"
+            style="font-size: 15px"
+          >
+            weiterlesen >>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Climate Change Start -->
+<div class="climate_change" style="padding-bottom: 150px">
+  <div class="container px-4 text-center">
+    <h2 class="cc_title">
+      sanieren für den <span class="fw-bold themeColor">Klimaschutz.</span>
+    </h2>
+
+    <p class="fw-light fz-eighteen mt-4">
+      Unterstütze unser aufstrebendes Startup in seinen Anfängen! Dein Beitrag macht einen Unterschied.<br/>
+      Gerne kannst du unsere Finanzierung durch eine kleine Spende stärken!
+    </p>
+
+    <a href="#">
+      <button class="banner_btn">Unterstütze Uns!</button>
+    </a>
+
+    <p class="fw-light mt-5" style="font-size: 14px">
+      Vielen Dank für deine Unterstützung und dein Vertrauen in den Erfolg von Orange-Simulation.
+    </p>
+  </div>
+</div>
+<!-- Climate Change End -->
+
+<!-- Footer Start -->
+{% endblock content %}

@@ -1,0 +1,319 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block navigation %}
+{% include 'navigation.html' %}
+{% endblock navigation %}
+{% block content %}
+<main class="overflow-hidden">
+  <div class="container-fluid bg-white border-top sub_nav fixed-top">
+    <div class="row">
+      <div class="col-12">
+        <ul class="nav">
+          <li class="nav-item sub_nav_item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="{% url 'energy' %}"
+              >Energetische Sanierung</a
+            >
+          </li>
+          <li class="nav-item sub_nav_item">
+            <a class="nav-link" href="{% url 'construction' %}"
+              >Bauliche Sanierung</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid energy_scrooling">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="fw-bold">Einfach mal machen</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="container con_solution_e px-4">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h3>Die Energetische Sanierung</h3>
+        <p>
+          Warum überhaupt eine energetische Sanierung? <br />Damit Ihr Haus
+          im Sommer kühler, im Winter wärmer und das ganze Jahr über
+          effizienter wird.
+        </p>
+      </div>
+    </div>
+
+    <div class="row row_solution_e">
+      <div class="col-md-2 col-3 text-center col_solution">
+        <img
+          src="{% static 'images/es_1.png' %}"
+          class="card-img-top img_solution"
+          alt="..."
+        />
+      </div>
+      <div class="col-md-4 col-8 col_solution">
+        <h5>Komfort</h5>
+        <p>
+          Steigerung des Wohnkomforts und der Wohnqualität sowie Erhöhung
+          des Wärmekomforts.
+        </p>
+      </div>
+
+      <div class="col-md-2 col-3 text-center col_solution">
+        <img
+          src="{% static 'images/es_2.png' %}"
+          class="card-img-top img_solution"
+          alt="..."
+        />
+      </div>
+      <div class="col-md-4 col-8 col_solution">
+        <h5>Fördermöglichkeiten</h5>
+        <p>
+          Unterstützungen durch BAFA und KfW können bis zu 40 % der
+          Investition betragen.
+        </p>
+      </div>
+
+      <div class="col-md-2 col-3 text-center col_solution">
+        <img
+          src="{% static 'images/es_3.png' %}"
+          class="card-img-top img_solution"
+          alt="..."
+        />
+      </div>
+      <div class="col-md-4 col-8 col_solution">
+        <h5>Gut für die Gesundheit</h5>
+        <p>
+          Verringerung von Gesundheitsrisiken durch gesünderes Raumklima und
+          Wärmeschutz.
+        </p>
+      </div>
+
+      <div class="col-md-2 col-3 text-center col_solution">
+        <img
+          src="{% static 'images/es_4.png' %}"
+          class="card-img-top img_solution"
+          alt="..."
+        />
+      </div>
+      <div class="col-md-4 col-8 col_solution">
+        <h5>Spart Geld</h5>
+        <p>
+          Unabhängig von Energiepreisschwankungen. Deine Investiotion wird
+          sich armortisieren.
+        </p>
+      </div>
+
+      <div class="col-md-2 col-3 text-center col_solution">
+        <img
+          src="{% static 'images/es_5.png' %}"
+          class="card-img-top img_solution"
+          alt="..."
+        />
+      </div>
+      <div class="col-md-4 col-8 col_solution">
+        <h5>Steigert Gebäudwert</h5>
+        <p>Wertsteigerung des Gebäudes durch energetische Sanierung.</p>
+      </div>
+
+      <div class="col-md-2 col-3 text-center col_solution">
+        <img
+          src="{% static 'images/es_6.png' %}"
+          class="card-img-top img_solution"
+          alt="..."
+        />
+      </div>
+      <div class="col-md-4 col-8 col_solution">
+        <h5>Hilft den Planeten</h5>
+        <p>
+          Beitrag zum Klimaschutz durch erhöhte Energieeffizienz und
+          verbesserte Klimabilanz.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid con_carousel">
+    <div class="row">
+      <div class="col-12 mb-5 text-center">
+        <h3>Der Inhalt einer <br />energetischen Sanierung?</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="{% static 'images/wall.jpg' %}" class="d-block" alt="..." />
+              <div class="carousel-caption">
+                <h5>Gebäudehülle</h5>
+                <p>
+                  Ein Großteil der Heizenergie geht über eine schlecht oder
+                  ungedämmte Gebäudehülle verloren. Deshalb zahlt sich
+                  besonders eine nachträgliche Dämmung bei einem bestehenden
+                  Gebäude gleich mehrfach aus. Durch die Erneuerung der
+                  Dämmung kann bis zu 46 % des Energieverbrauchs eingespart
+                  werden.
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="{% static 'images/window.jpg' %}" class="d-block" alt="..." />
+              <div class="carousel-caption">
+                <h5>Fenster</h5>
+                <p>
+                  Der Einbau von neuen Fenstern senkt den Energiebedarf
+                  eines Gebäudes um bis zu 20 %. Der Austausch von Fenstern
+                  erfolgt in der Regel in Abstimmung mit einer
+                  Außenwanddämmung. Neben der Wärmedämmung ist auch der
+                  Lärmschutz zu beachten. Heute werden überwiegend dreifach
+                  verglaste Fenster verbaut.
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="{% static 'images/heating.jpg' %}" class="d-block" alt="..." />
+              <div class="carousel-caption">
+                <h5>Heizung</h5>
+                <p>
+                  Je besser das Haus isoliert ist, desto kleiner und
+                  verbrauchsarmer kann die Heizung ausgelegt sein. Mit der
+                  Erneuerung der Heizung kann eine Energieeinsparung von 12
+                  bis 47 % erzielt werden. Zusätzlich bringt eine
+                  Solarthermie-Anlage ein Einsparpotenzial von 3 bis 7 % mit
+                  sich.
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="{% static 'images/photo.jpg' %}" class="d-block" alt="..." />
+              <div class="carousel-caption">
+                <h5>Photovoltaik</h5>
+                <p>
+                  Nutzen Sie Photovoltaik als intelligenten Bestandteil
+                  Ihres energetischen Hauskonzepts. Eine Photovoltaik-Anlage
+                  auf Ihrem Dach erzeugt Tag für Tag ertragreichen, sauberen
+                  Strom. Mit der Installation einer Photovoltaikanlage kann
+                  eine Energieeinsparung von 10 bis 20 % erreicht werden.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top Footer Start -->
+  <div
+    class="top_footer d-flex flex-md-row flex-column"
+    style="padding-top: 60px"
+  >
+    <!-- Left -->
+    <div class="col-md-6 d-flex align-items-md-end">
+      <div class="bg-black py-5 tf_left" style="width: 100%">
+        <h3
+          class="tf_heading text-white fw-semibold fs-5 text-uppercase"
+          style="line-height: 150%"
+        >
+          ALLE Loesungswege <br />
+          verstanden?
+        </h3>
+
+        <a href="">
+          <button class="banner_btn">Demo Starten</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Right -->
+    <div class="col-md-6 tf_right position-relative">
+      <h3
+        class="tf_heading text-white fw-semibold fs-5 text-uppercase mb-4"
+        style="line-height: 150%"
+      >
+        ich will noch mehr <br />
+        zum Thema bauliche Sanierung <br />
+        erfahren!
+      </h3>
+
+      <a
+        href="{% url 'construction' %}"
+        class="simulation-link text-decoration-none fw-light text-white"
+        style="font-size: 15px"
+      >
+        mehr erfahren >>
+      </a>
+
+      <!-- Circle -->
+      <div class="circle_footer"></div>
+    </div>
+  </div>
+  <!-- Top Footer End -->
+</main>
+    <!------------------------------------------ Footer --------------------------------------------->
+{% endblock content %}

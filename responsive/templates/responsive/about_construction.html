@@ -1,0 +1,319 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block navigation %}
+{% include 'navigation.html' %}
+{% endblock navigation %}
+{% block content %}
+<!-- Navbar End -->
+
+<!----------------------------------------- Sub-Nav ---------------------------------------------->
+<main class="overflow-hidden">
+  <div class="container-fluid bg-white border-top sub_nav fixed-top">
+    <div class="row">
+      <div class="col-12">
+        <ul class="nav">
+          <li class="nav-item sub_nav_item">
+            <a
+              class="nav-link"
+              aria-current="page"
+              href="{% url 'energy' %}"
+              >Energetische Sanierung</a
+            >
+          </li>
+          <li class="nav-item sub_nav_item">
+            <a class="nav-link active" href="{% url 'construction' %}"
+              >Bauliche Sanierung</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid construction_scrooling">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="fw-bold">Schönheit braucht <br />pflege</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="container con_solution_e">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h3>Die Bauliche Sanierung</h3>
+        <p>
+          Warum überhaupt eine bauliche Sanierung? <br />Damit der Charme
+          des Altbaus nicht verloren geht und der Wert der Immobilie
+          gesteigert wird. Zusätzlich ist es viel nachhaltiger als ein
+          einfacher Neubau.
+        </p>
+      </div>
+    </div>
+
+    <div class="row row_solution_e px-4">
+      <div class="col-md-2 col-3 text-center col_solution">
+        <img
+          src="{% static 'images/cs_1.png' %}"
+          class="card-img-top img_solution"
+          alt="..."
+        />
+      </div>
+      <div class="col-md-4 col-8 col_solution">
+        <h5>Mehr Charme</h5>
+        <p>
+          Die Seele, Erinnerungen und der Charme des Hauses bleiben
+          erhalten.
+        </p>
+      </div>
+
+      <div class="col-md-2 col-3 text-center col_solution">
+        <img
+          src="{% static 'images/es_4.png' %}"
+          class="card-img-top img_solution"
+          alt="..."
+        />
+      </div>
+      <div class="col-md-4 col-8 col_solution">
+        <h5>Spart Geld</h5>
+        <p>
+          Geringere Investitionskosten bei guter Bausubstanz als bei Neubau.
+        </p>
+      </div>
+
+      <div class="col-md-2 col-3 text-center col_solution">
+        <img
+          src="{% static 'images/cs_3.png' %}"
+          class="card-img-top img_solution"
+          alt="..."
+        />
+      </div>
+      <div class="col-md-4 col-8 col_solution">
+        <h5>Spart Zeit</h5>
+        <p>Kürzere Bauzeiten und schrittweise Sanierungen möglich.</p>
+      </div>
+
+      <div class="col-md-2 col-3 text-center col_solution">
+        <img
+          src="{% static 'images/cs_4.png' %}"
+          class="card-img-top img_solution"
+          alt="..."
+        />
+      </div>
+      <div class="col-md-4 col-8 col_solution">
+        <h5>Grüne Oase</h5>
+        <p>
+          Garten inklusive alter Bäume und Pflanzen muss nicht entfernt
+          werden.
+        </p>
+      </div>
+
+      <div class="col-md-2 col-3 text-center col_solution">
+        <img
+          src="{% static 'images/es_5.png' %}"
+          class="card-img-top img_solution"
+          alt="..."
+        />
+      </div>
+      <div class="col-md-4 col-8 col_solution">
+        <h5>Steigert den Wert Ihres Gebäudes</h5>
+        <p>
+          Zusätzliche Wertsteigerung des Gebäudes. Es lohnt sich fast immer
+          zu Sanieren
+        </p>
+      </div>
+
+      <div class="col-md-2 col-3 text-center col_solution">
+        <img
+          src="{% static 'images/es_6.png' %}"
+          class="card-img-top img_solution"
+          alt="..."
+        />
+      </div>
+      <div class="col-md-4 col-8 col_solution">
+        <h5>Hilft den Planeten</h5>
+        <p>
+          Bestandsgebäude zu sanieren, anstatt neu zu bauen ist wesentlich
+          nachhaltiger.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid con_carousel">
+    <div class="row">
+      <div class="col-12 mb-5 text-center">
+        <h3>Der Inhalt einer <br />baulichen Sanierung?</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="{% static 'images/construction-4.jpg' %}"
+                class="d-block"
+                alt="..."
+              />
+              <div class="carousel-caption">
+                <h5>Instandsetzung </h5>
+                <p>
+                  Dieser Bestandteil umfasst die Beseitigung von Schäden und Mängeln am Gebäude,
+                  um seine Substanz zu erhalten und seine Lebensdauer zu verlängern.
+                  Dazu gehören beispielsweise die Ausbesserung von Putzschäden bzw.
+                  dessen Erneuerung.
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="{% static 'images/construction-3.jpg' %}" class="d-block" alt="..." />
+              <div class="carousel-caption">
+                <h5>Renovierung</h5>
+                <p>
+                  Im Gegensatz zur Sanierung, die sich auf den Erhalt der Bausubstanz fokussiert,
+                  geht es bei der Renovierung vorrangig um die optische Aufwertung und den
+                  Werterhalt des Objekts. Typische Renovierungsmaßnahmen umfassen z.B.
+                  die Beseitigung von Mängeln, die das Erscheinungsbild des Gebäudes beeinträchtigen.
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="{% static 'images/construction-1.jpg' %}" class="d-block" alt="..." />
+              <div class="carousel-caption">
+                <h5>Modernisierung</h5>
+                <p>
+                  Die Modernisierung zielt darauf ab, den Wohnkomfort und die Ausstattung
+                  eines Gebäudes zu verbessern, ohne dabei die Bausubstanz grundlegend
+                  zu verändern. Sie fokussiert sich auf die Verbesserung der Wohnqualität
+                  und kann z.B. die Erneuerung Sanitärer Einrichtungen sein.
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="{% static 'images/construction-2.jpg' %}" class="d-block" alt="..." />
+              <div class="carousel-caption">
+                <h5>Substanzsanierung</h5>
+                <p>
+                  Die Substanzsanierung hingegen befasst sich mit der grundlegenden
+                  Instandsetzung und Erneuerung der tragenden Strukturen eines
+                  Gebäudes. Sie dient dem Erhalt der Bausubstanz und der Sicherstellung
+                  der Standsicherheit des Gebäudes, wie z.B. die Erneuerung des Fundaments.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top Footer Start -->
+  <div
+    class="top_footer d-flex flex-md-row flex-column"
+    style="padding-top: 60px"
+  >
+    <!-- Left -->
+    <div class="col-md-6 d-flex align-items-md-end">
+      <div class="bg-black py-5 tf_left" style="width: 100%">
+        <h3
+          class="tf_heading text-white fw-semibold fs-5 text-uppercase"
+          style="line-height: 150%"
+        >
+          ALLE Loesungswege <br />
+          verstanden?
+        </h3>
+
+        <a href="">
+          <button class="banner_btn">Demo Starten</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Right -->
+    <div class="col-md-6 tf_right position-relative">
+      <h3
+        class="tf_heading text-white fw-semibold fs-5 text-uppercase mb-4"
+        style="line-height: 150%"
+      >
+        ich will noch mehr <br />
+        zum Thema nachhaltigkeit <br />
+        erfahren!
+      </h3>
+
+      <a
+        href="{% url 'sustainability' %}"
+        class="simulation-link text-decoration-none fw-light text-white"
+        style="font-size: 15px"
+      >
+        mehr erfahren >>
+      </a>
+
+      <!-- Circle -->
+      <div class="circle_footer"></div>
+    </div>
+  </div>
+  <!-- Top Footer End -->
+</main>
+<!------------------------------------------ Footer --------------------------------------------->
+{% endblock content %}

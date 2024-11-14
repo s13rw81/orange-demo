@@ -1,0 +1,354 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block navigation %}
+{% include 'navigation.html' %}
+{% endblock navigation %}
+{% block content %}
+<!-- Navbar End -->
+
+<!-- Pricing Start -->
+<div class="paddingBigY">
+  <div class="container">
+    <!-- Heading -->
+    <div class="price_heading">
+      <h1 class="sb_heading text-black">
+        Unsere <span class="themeColor">Preise</span>
+      </h1>
+    </div>
+
+    <!-- Cards Container -->
+    <div class="cards_container">
+      <!-- Card -->
+      <div class="pricing_card">
+        <!-- Category -->
+        <h2 class="price_head">demo.</h2>
+
+        <!-- Price Text -->
+        <h3 class="price_text">Kostenlos</h3>
+
+        <!-- Desc -->
+        <p class="text-black fw-light" style="font-size: 14px">
+          Aktuell steht nur eine Demoversion zu deiner Verfügung.
+        </p>
+
+        <!-- Facilities -->
+        <div class="mt-5">
+          <!-- Card -->
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <img
+              src="{% static 'images/tickmark.svg' %}"
+              alt="tickmark"
+              class="tickmark"
+            />
+
+            <p class="fw-light mb-0" style="font-size: 15px;">
+              Wohngebäude
+            </p>
+          </div>
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <img
+              src="{% static 'images/tickmark.svg' %}"
+              alt="tickmark"
+              class="tickmark"
+            />
+
+            <p class="fw-light mb-0" style="font-size: 15px">
+              3D-Erfassung
+            </p>
+          </div>
+
+          <!-- Card -->
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <img
+              src="{% static 'images/tickmark.svg' %}"
+              alt="tickmark"
+              class="tickmark"
+            />
+
+            <p class="fw-light mb-0" style="font-size: 15px">
+              Ermittlung IST-Zustand
+            </p>
+          </div>
+
+          <!-- Card -->
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <img
+              src="{% static 'images/tickmark.svg' %}"
+              alt="tickmark"
+              class="tickmark"
+            />
+
+            <p class="fw-light mb-0" style="font-size: 15px">
+              Energetische Sanierung
+            </p>
+          </div>
+
+          <!-- Card -->
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <img
+              src="{% static 'images/tickmark.svg' %}"
+              alt="tickmark"
+              class="tickmark"
+            />
+
+            <p class="fw-light mb-0" style="font-size: 15px">Renovierung</p>
+          </div>
+
+          <!-- Card -->
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <img
+              src="{% static 'images/tickmark.svg' %}"
+              alt="tickmark"
+              class="tickmark"
+            />
+
+            <p class="fw-light mb-0" style="font-size: 15px">Gebäudebewertung</p>
+          </div>
+        </div>
+
+        <!-- Button -->
+        <a href=""><button class="price_btn">Demo Starten</button></a>
+      </div>
+
+      <!-- Card -->
+      <div class="pricing_card">
+        <!-- Category -->
+        <h2 class="price_head">base.Wohngebäude</h2>
+
+        <!-- Price Text -->
+        <h3 class="price_text opacity-50">-</h3>
+
+        <!-- Desc -->
+        <p class="text-black fw-light" style="font-size: 14px">Diese Version kann aktuell noch nicht bearbeitet werden.</p>
+        <div class="mt-5">
+          <!-- Card -->
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <img
+              src="{% static 'images/tickmark.svg' %}"
+              alt="tickmark"
+              class="tickmark"
+            />
+
+            <p class="fw-light mb-0" style="font-size: 15px; opacity: 0.6;">
+              Wohngebäude
+            </p>
+          </div>
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <img
+              src="{% static 'images/tickmark.svg' %}"
+              alt="tickmark"
+              class="tickmark"
+            />
+
+            <p class="fw-light mb-0" style="font-size: 15px; opacity: 0.6;">
+              3D-Erfassung
+            </p>
+          </div>
+
+          <!-- Card -->
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <img
+              src="{% static 'images/tickmark.svg' %}"
+              alt="tickmark"
+              class="tickmark"
+            />
+
+            <p class="fw-light mb-0" style="font-size: 15px; opacity: 0.6;">
+              Ermittlung IST-Zustand
+            </p>
+          </div>
+
+          <!-- Card -->
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <img
+              src="{% static 'images/tickmark.svg' %}"
+              alt="tickmark"
+              class="tickmark"
+            />
+
+            <p class="fw-light mb-0" style="font-size: 15px; opacity: 0.6;">
+              Energetische Sanierung
+            </p>
+          </div>
+
+          <!-- Card -->
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <img
+              src="{% static 'images/tickmark.svg' %}"
+              alt="tickmark"
+              class="tickmark"
+            />
+
+            <p class="fw-light mb-0" style="font-size: 15px; opacity: 0.6;">Renovierung</p>
+          </div>
+
+          <!-- Card -->
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <img
+              src="{% static 'images/tickmark.svg' %}"
+              alt="tickmark"
+              class="tickmark"
+            />
+
+            <p class="fw-light mb-0" style="font-size: 15px; opacity: 0.6;">Gebäudebewertung</p>
+          </div>
+        </div>
+
+        <!-- Button -->
+        <a href="./index.html">
+          <button class="price_btn" disabled type="button" style="opacity: 0.6;">nicht verfügbar</button>
+        </a>
+
+      </div>
+
+      <!-- Card -->
+      <div class="pricing_card">
+        <!-- Category -->
+        <h2 class="price_head">expert.</h2>
+
+        <!-- Price Text -->
+        <h3 class="price_text opacity-50">€ 0.00</h3>
+
+        <!-- Desc -->
+        <p class="text-black fw-light" style="font-size: 14px">
+          Diese Version kann aktuell noch nicht bearbeitet werden.
+        </p>
+      </div>
+
+      <!-- Card -->
+      <div class="pricing_card">
+        <!-- Category -->
+        <h2 class="price_head">premium.</h2>
+
+        <!-- Price Text -->
+        <h3 class="price_text opacity-50">€ 0.00</h3>
+
+        <!-- Desc -->
+        <p class="text-black fw-light" style="font-size: 14px">
+          Diese Version kann aktuell noch nicht bearbeitet werden.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Pricing Start -->
+
+<!-- Pricing Content -->
+<div class="paddingMidY">
+  <div class="container">
+    <!-- Wrapper -->
+    <div
+      class="d-flex align-items-center gap-5 flex-md-row flex-column-reverse"
+    >
+      <!-- Left -->
+      <div class="col">
+        <h4 class="pc_heading fw-semibold mb-4">
+          kostenlose <br />
+          demoversion.
+        </h4>
+
+        <p class="fw-light" style="font-size: 15px">
+          Da es sich aktuell noch um eine Demoversion von Orange-Simulation
+          <br/>
+          handelt, können leider noch keine genaueren Preisangaben gemacht
+          <br/>
+          werden.
+        </p>
+
+        <p class="fw-light mt-4" style="font-size: 15px">
+          Falls noch offene Fragen zu unserer Preispolitik bestehen, kannst du uns<br/>
+          gerne unter folgender E-Mail kontaktieren:
+        </p>
+
+        <a
+          href="mailto:support@orange-simulation.com"
+          class="fw-medium themeColor text-decoration-none d-block"
+          style="font-size: 15px; margin-top: 30px"
+        >
+          support@orange-simulation.com
+        </a>
+      </div>
+
+      <!-- Right -->
+      <div class="col d-flex justify-content-md-end justify-content-center">
+        <img
+          src="{% static 'images/piggy-bank.svg' %}"
+          alt="piggy_bank"
+          class="fresh_news_image"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Fresh News Start -->
+<div class="fresh_news paddingBigY">
+  <div class="container px-4">
+    <!-- Heading -->
+    <div class="text-center">
+      <p class="fz-eighteen fw-light text-black">
+        be up to date with our new blog
+      </p>
+
+      <h2 class="section_heading fw-light">
+        fresh new <span class="fw-bold">news.</span>
+      </h2>
+    </div>
+
+    <!-- Contents -->
+    <div
+      class="d-flex align-items-lg-center justify-content-between flex-lg-row flex-column gap-lg-2 gap-5 mt-lg-5"
+    >
+      <!-- Left -->
+      <div class="col-lg-4">
+        <h4
+          class="fw-bold text-uppercase d-lg-block d-none"
+          style="line-height: 150%; font-size: 19px"
+        >
+          a news <br />
+          <span class="themeColor">perspective.</span>
+        </h4>
+
+        <p class="fw-light mt-4 fz-fifteen">
+          Persönlicher Blog über aktuelle Themen aus <br/>
+          unserer Schreibwerkstatt.
+        </p>
+
+        <!-- Button -->
+        <div class="mt-1">
+          <a
+            href="{% url 'newspaper' %}"
+            class="simulation-link text-decoration-none fw-light themeColor fz-fifteen"
+          >
+            mehr erfahren >>
+          </a>
+        </div>
+      </div>
+
+      <!-- Middle -->
+      <div
+        class="col-lg-4 d-flex align-items-center justify-content-center"
+      >
+        <img
+          src="{% static 'images/fresh-news-image.jpg' %}"
+          alt="fresh_news"
+          style="width: 100%"
+          class="fresh_news_image"
+        />
+      </div>
+
+      <!-- Right -->
+      <div class="col-lg-4">
+        <p class="fw-light ps-md-5 fz-fifteen" style="line-height: 180%">
+          OOrange hält dich kontinuierlich über die Themen Energie, Renovierung und Nachhaltigkeit auf dem neuesten Stand.
+          Unsere Artikel werden persönlich von unserem Team verfasst. Wir nehmen gerne deine Anregungen entgegen,
+          wenn du dich für ein bestimmtes Thema besonders interessierst.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fresh News End -->
+
+<!-- Footer Start -->
+{% endblock content %}

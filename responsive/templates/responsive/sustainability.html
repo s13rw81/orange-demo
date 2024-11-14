@@ -1,0 +1,416 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block navigation %}
+{% include 'navigation.html' %}
+{% endblock navigation %}
+{% block content %}
+<!-- Navbar End -->
+
+<!-- Banner Start -->
+<div class="sustain_banner position-relative">
+  <div class="container px-4">
+    <h1 class="sb_heading text-black">
+      Was bedeutet UNS <br />
+      die <span class="themeColor">Zukunft</span>
+    </h1>
+
+    <p class="fw-light fz-eighteen" style="margin-top: 35px">
+      Nachhaltigkeit beginnt jetzt - <br />
+      mit
+      <span class="fw-medium"
+        >DIR und unserer Nachhaltigkeitsberatung.</span
+      >
+      <br />
+      Finde deine individuelle Lösung mit Orange Simulation.
+    </p>
+
+    <a href="#">
+      <button class="data_btn">Nachhaltigkeitsberatung*</button>
+    </a>
+
+    <p class="mt-3" style="color: #767676; font-size: 14px">
+      *) In aktueller Demoversion leider noch nicht vefügbar.
+    </p>
+  </div>
+
+  <!-- Imagee -->
+  <div class="sustain_overlay">
+    <img src="{% static 'images/sustain-banner.png' %}" alt="sustain_banner" />
+  </div>
+</div>
+<!-- Banner End -->
+
+<!-- Definition Section Start -->
+<div class="definition paddingMidY">
+  <div class="container">
+    <!-- Heading -->
+    <div class="text-center">
+      <p class="fz-eighteen fw-light text-black">
+        what is this sustainability actually
+      </p>
+
+      <h2 class="section_heading fw-light">
+        <span class="fw-bold">definition.</span>
+      </h2>
+
+      <p
+        class="fw-light text-black mt-4 fz-fifteen"
+        style="line-height: 187%"
+      >
+        Natürliche Ressourcen zu schonen bedeutet, verantwortungsvoll mit unserer Umwelt umzugehen,
+        um sicherzustellen, dass sie auch für kommende Generationen intakt bleibt.
+        Dies umfasst die Förderung erneuerbarer Energien und den Schutz von Ökosystemen.
+        Soziale Gerechtigkeit erfordert faire Arbeitsbedingungen, Chancengleichheit und
+        den Schutz der Rechte jedes Einzelnen, unabhängig von Geschlecht, Alter oder Herkunft.
+        Wirtschaftliche Stabilität zu gewährleisten bedeutet, eine Wirtschaft aufzubauen,
+        die nicht nur auf kurzfristige Gewinne abzielt, sondern langfristige Stabilität
+        und den Wohlstand aller fördert, ohne Umwelt- und soziale Belange zu vernachlässigen.
+        Natürliche Ressourcen, soziale Gerechtigkeit und wirtschaftliche Stabilität bilden die
+        drei Säulen der Nachhaltigkeit.
+      </p>
+    </div>
+
+    <!-- Content -->
+    <div
+      class="defination_content d-flex align-items-start justify-content-between flex-lg-row flex-column"
+      style="gap: 80px; margin-top: 60px"
+    >
+      <div class="col">
+        <!-- icon -->
+        <div
+          class="d-flex justify-content-center align-items-center"
+          style="height: 60px"
+        >
+          <img src="{% static 'images/defi-1.svg' %}" alt="defi_icon" />
+        </div>
+
+        <!-- Title -->
+        <h3 class="text-uppercase text-black text-center dc_title my-4">
+          Oekonomie
+        </h3>
+
+        <!-- Desc -->
+        <p class="text-black fw-light text-center fz-fifteen">
+          Die erste Säule betrifft die wirtschaftliche Stabilität.
+          Sie zielt darauf ab, eine nachhaltige und prosperierende Wirtschaft zu schaffen,
+          die nicht nur kurzfristige Gewinne verfolgt, sondern langfristig stabil
+          ist und zum Wohlstand aller beiträgt.
+        </p>
+      </div>
+
+      <div class="col">
+        <!-- icon -->
+        <div
+          class="d-flex justify-content-center align-items-center"
+          style="height: 60px"
+        >
+          <img src="{% static 'images/defi-2.svg' %}" alt="defi_icon" />
+        </div>
+
+        <!-- Title -->
+        <h3 class="text-black text-uppercase text-center dc_title my-4">
+          OEkologie
+        </h3>
+
+        <!-- Desc -->
+        <p class="text-black fw-light text-center fz-fifteen">
+          Die zweite Säule konzentriert sich auf den Schutz natürlicher Ressourcen und Ökosysteme.
+          Dies beinhaltet einen verantwortungsvollen Umgang mit Ressourcen,
+          die Nutzung erneuerbarer Energien und die Reduzierung von Umweltverschmutzung,
+          um die Gesundheit unseres Planeten für zukünftige Generationen zu bewahren.
+        </p>
+      </div>
+
+      <div class="col">
+        <!-- icon -->
+        <div
+          class="d-flex justify-content-center align-items-center"
+          style="height: 60px"
+        >
+          <img src="{% static 'images/defi-3.svg' %}" alt="defi_icon" />
+        </div>
+
+        <!-- Title -->
+        <h3 class="text-uppercase text-center text-black dc_title my-4">
+          Soziales
+        </h3>
+
+        <!-- Desc -->
+        <p class="text-black fw-light text-center fz-fifteen">
+          Die dritte Säule befasst sich mit sozialer Gerechtigkeit.
+          Sie fördert faire Arbeitsbedingungen, sichert Chancengleichheit
+          und schützt die Rechte aller Menschen
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Definition Section End -->
+
+<!-- Digitization Section Start -->
+<div class="digitization paddingBigY">
+  <div class="container">
+    <!-- Heading -->
+    <div>
+      <p class="fz-eighteen fw-light" style="line-height: 150%">
+        digitization is our motivation <br />
+        anytime & anywhere
+      </p>
+
+      <h2 class="effektiv_heading fw-bold text-black">
+        oekologisch & <br />
+        <span>umweltfreundlich handeln</span>
+      </h2>
+
+      <h3 class="effektiv_subheading text-black">
+        einfach + schnell + genau Resultate
+      </h3>
+
+      <p class="fz-eighteen fw-light" style="line-height: 150%">
+        Nachhaltigkeitsberatung digitalisieren.
+      </p>
+    </div>
+
+    <!-- Content -->
+    <div class="digitization_content">
+      <!-- Card -->
+      <div
+        class="d-flex align-items-center justify-content-between flex-lg-row flex-column-reverse"
+        style="gap: 70px"
+      >
+        <div class="col">
+          <!-- Desc -->
+          <div class="pe-md-5">
+            <p class="ec_desc fw-light">
+              <span class="fw-bold">Ökobilanz.</span> Mit Orange-Simulation
+              kannst du die Umweltauswirkungen von Gebäuden über den gesamten
+              Lebenszyklus einfach berechnen. Unsere Datenbank für Baustoffe
+              und Anlagentechnik ermöglicht es uns, mit qualitätsgeprüften
+              Datensätzen die ökologischen Auswirkungen eines Gebäudes zu
+              analysieren, zu bewerten und anschließend zu optimieren.
+            </p>
+          </div>
+
+          <!-- Heading and desc box -->
+          <div class="mt-4">
+            <h3 class="ec__heading">oekobau.dat</h3>
+
+            <p class="ec__subheading fw-semibold mt-2">
+              mit unserer Datenbank verknüpft
+            </p>
+          </div>
+
+          <!-- Heading and desc box -->
+          <div class="mt-4">
+            <h3 class="ec__heading">50 Jahre</h3>
+
+            <p class="ec__subheading fw-semibold mt-2">
+              Betrachtungszeitraum
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="smaller-image col d-flex align-items-center justify-content-md-end justify-content-center">
+          <img
+            src="{% static 'images/digi-1.png' %}"
+            alt="digitization"
+            class="fresh_news_image"
+          />
+        </div>
+      </div>
+
+      <!-- Card -->
+      <div
+        class="d-flex align-items-center justify-content-between flex-lg-row-reverse flex-column-reverse digi-card"
+        style="gap: 70px"
+      >
+        <div class="col">
+          <!-- Desc -->
+          <div class="pe-md-5">
+            <p class="ec_desc fw-light">
+              <span class="fw-bold">ESG-Bewertung.</span> Unsere ESG-Analyse
+              basiert auf der energetischen und klimabezogenen Bewertung deines
+              Gebäudes (Environmental). Mithilfe automatisch generierter
+              Optimierungsmaßnahmen werden zukünftige gesetzliche Vorgaben,
+              nationale Zielsetzungen und Zertifizierungen effizient erreicht.
+              Die Ergebnisse der Simulation werden ausführlich mit
+              branchenüblichen Standards verglichen.
+            </p>
+          </div>
+
+          <!-- Heading and desc box -->
+          <div class="mt-4">
+            <h3 class="ec__heading">Environmental</h3>
+
+            <p class="ec__subheading fw-semibold mt-2">
+              grundlage unserer Analyse
+            </p>
+          </div>
+
+          <!-- Heading and desc box -->
+          <div class="mt-4">
+            <h3 class="ec__heading">Benchmark</h3>
+
+            <p class="ec__subheading fw-semibold mt-2">
+              mit branchenüblichen Standards
+            </p>
+          </div>
+        </div>
+
+        <div class="smaller-image col d-flex justify-content-center">
+          <img
+            src="{% static 'images/digi-2.png' %}"
+            alt="Genaue Resultate."
+            class="fresh_news_image"
+          />
+        </div>
+      </div>
+
+      <!-- Card -->
+      <div
+        class="d-flex align-items-center justify-content-between flex-lg-row flex-column-reverse"
+        style="gap: 70px"
+      >
+        <div class="col">
+          <!-- Desc -->
+          <div class="pe-md-5">
+            <p class="ec_desc fw-light">
+              <span class="fw-bold">CRREM-Analyse.</span> Als entscheidendes
+              Instrument zur messbaren Dekarbonisierung von Immobilien
+              wurde die CRREM-Analyse in unser Tool integriert.
+              Neben der Identifizierung von CO₂-Risiken hilft das Tool auch dabei,
+              die besten Verbesserungsstrategien im Rahmen von
+              Sanierungsmaßnahmen zu ermitteln und deren Auswirkungen zu analysieren.
+            </p>
+          </div>
+
+          <!-- Heading and desc box -->
+          <div class="mt-4">
+            <h3 class="ec__heading">1,5 Grad</h3>
+
+            <p class="ec__subheading fw-semibold mt-2">
+              Zielvorgabe in unserem Tool
+            </p>
+          </div>
+
+          <!-- Heading and desc box -->
+          <div class="mt-4">
+            <h3 class="ec__heading">Stranded Asset</h3>
+
+            <p class="ec__subheading fw-semibold mt-2">
+              durch gezielte Maßnahmen vermeiden
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="smaller-image col d-flex align-items-center justify-content-md-end justify-content-center"
+        >
+          <img
+            src="{% static 'images/digi-3.png' %}"
+            alt="digitization"
+            class="fresh_news_image"
+            style="width: 100%"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Digitization Section End -->
+
+<!-- Fresh News Start -->
+<div class="fresh_news paddingBigY">
+  <div class="container px-4">
+    <!-- Heading -->
+    <div class="text-center">
+      <p class="fz-eighteen fw-light text-black">
+        be up to date with our new blog
+      </p>
+
+      <h2 class="section_heading fw-light">
+        fresh new <span class="fw-bold">news.</span>
+      </h2>
+    </div>
+
+    <!-- Contents -->
+    <div
+      class="d-flex align-items-lg-center justify-content-between flex-lg-row flex-column gap-lg-2 gap-5 mt-lg-5"
+    >
+      <!-- Left -->
+      <div class="col-lg-4">
+        <h4
+          class="fw-bold text-uppercase d-lg-block d-none"
+          style="line-height: 150%; font-size: 19px"
+        >
+          a news <br />
+          <span class="themeColor">perspective.</span>
+        </h4>
+
+        <p class="fw-light mt-4 fz-fifteen">
+          Persönlicher Blog über aktuelle Themen aus <br/>
+          unserer Schreibwerkstatt.
+        </p>
+
+        <!-- Button -->
+        <div class="mt-1">
+          <a
+            href="{% url 'newspaper' %}"
+            class="simulation-link text-decoration-none fw-light themeColor fz-fifteen"
+          >
+            mehr erfahren >>
+          </a>
+        </div>
+      </div>
+
+      <!-- Middle -->
+      <div
+        class="col-lg-4 d-flex align-items-center justify-content-center"
+      >
+        <img
+          src="{% static 'images/fresh-news-image.jpg' %}"
+          alt="fresh_news"
+          style="width: 100%"
+          class="fresh_news_image"
+        />
+      </div>
+
+      <!-- Right -->
+      <div class="col-lg-4">
+        <p class="fw-light ps-md-5 fz-fifteen" style="line-height: 180%">
+          Orange hält dich kontinuierlich über die Themen Energie, Renovierung und Nachhaltigkeit auf dem neuesten Stand.
+          Unsere Artikel werden persönlich von unserem Team verfasst. Wir nehmen gerne deine Anregungen entgegen,
+          wenn du dich für ein bestimmtes Thema besonders interessierst.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fresh News End -->
+
+<!-- Climate Change Start -->
+<div class="climate_change paddingMY">
+  <div class="container px-4 text-center">
+    <h2 class="cc_title">
+      sanieren für den <span class="fw-bold themeColor">Klimaschutz.</span>
+    </h2>
+
+    <p class="fw-light fz-eighteen mt-4">
+      Unterstütze unser aufstrebendes Startup in seinen Anfängen! Dein Beitrag macht einen Unterschied.<br/>
+      Gerne kannst du unsere Finanzierung durch eine kleine Spende stärken!
+    </p>
+
+    <a href="#">
+      <button class="banner_btn">Unterstütze Uns!</button>
+    </a>
+
+    <p class="fw-light mt-5" style="font-size: 14px">
+      Vielen Dank für deine Unterstützung und dein Vertrauen in den Erfolg von Orange-Simulation
+    </p>
+  </div>
+</div>
+<!-- Climate Change End -->
+
+<!-- Footer Start -->
+{% endblock content %}
