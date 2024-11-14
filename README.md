@@ -13,3 +13,4 @@ your task is to make this project reponsive on as many templates as possible.
 - clone this repository into the present working directory or another directory of your choice
 - run ```pip install django``` while the virtual environment is active to install django
 - run the command `python manage.py runserver` to start your local server
+- raise PR, do not push directly to `master/main` branch
