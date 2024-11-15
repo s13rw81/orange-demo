@@ -513,3 +513,141 @@
     width: 80% !important;
   }
 }
+/* z-index to avoid overlap */
+.navbar {
+  z-index: 1030 !important; 
+}
+
+
+.dropdown-menu {
+  z-index: 1050 !important; 
+  position: absolute; 
+}
+
+/* Adjust for mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar-nav .dropdown-menu {
+      position: static; 
+  }
+  .navbar-content{
+    min-height: 0vh;
+    margin-top: -8px;
+    margin-left: -23px;
+    margin-right: -23px;
+}
+.nav-link.active {
+  color: #007bff;  /* Change the text color to blue when active */
+  border-bottom: 2px solid #007bff; /* Blue underline for active links */
+  transition: color 0.3s ease, border-color 0.3s ease; /* Smooth transition for color and underline */
+  text-decoration: none; /* Remove default underline */
+}
+
+/* Hover effect: Change text color to orange and remove underline */
+.nav-link:hover {
+  color: orange; /* Change text color to orange on hover */
+  border-bottom: 2px solid transparent; /* Remove underline on hover */
+}
+
+/* Default link style (not active) */
+.nav-link {
+  color: #555; /* Standard text color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+/**styling --nav--**/
+.energy-nav-2{
+    .navbar-nav{
+      margin: top 30px;
+    }
+}
+}
+/**styling --nav--**/
+.nav-link.active {
+  color: #007bff;  /* Change the text color to blue when active */
+  border-bottom: 2px solid #007bff; /* Blue underline for active links */
+  transition: color 0.3s ease, border-color 0.3s ease; /* Smooth transition for color and underline */
+  text-decoration: none; /* Remove default underline */
+}
+
+/* Hover effect: Change text color to orange and remove underline */
+.nav-link:hover {
+  color: orange; /* Change text color to orange on hover */
+  border-bottom: 2px solid transparent; /* Remove underline on hover */
+}
+
+/* Default link style (not active) */
+.nav-link {
+  color: #555; /* Standard text color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+/**styling --nav--**/
+/* For laptops and small PCs (between 1024px and 1250px) */
+@media screen and (min-width: 1024px) and (max-width: 1250px) {
+  #use-white-bg {
+    background-color: white !important;
+  }
+}
+
+/* For larger screens (between 1250px and 1450px, larger laptops and desktops) */
+@media screen and (min-width: 1250px) and (max-width: 1450px) {
+  #use-white-bg {
+    background-color: white !important;
+  }
+}
+
+/* For large desktops (greater than 1450px) */
+@media screen and (min-width: 1450px) {
+  #use-white-bg {
+    background-color: white !important;
+  }
+}
+/* renovation hover */
+.hover-text {
+  position: absolute;
+  top: 100%;  /* Position it below the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px !important;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#icon:hover .hover-text {
+  opacity: 1;
+} 
+
+
+
+
+.card {
+  margin: 0 0.5em;
+  border-radius: 0;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  font-size: 0.9em;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 9vh;
+  height: 9vh;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.5;
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 0.8;
+}
+.col_solution img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 75px;
+}

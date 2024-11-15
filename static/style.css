@@ -2421,7 +2421,7 @@ OLD CSS
 
 .icon-login {
     height: 24px;
-    margin0;
+    margin:0;
     padding-right: 8px;
     width: auto;
 }
@@ -2463,7 +2463,19 @@ OLD CSS
     margin-bottom: 1rem;
 }
 
-
 .active-orange {
   color: rgb(255 116 1);
+}
+@media (max-width: 768px) {
+  .banner {
+    padding: var(--section-paddingY) 1rem; /* Adds extra padding on smaller screens */
+    flex-direction: column; /* Stacks content vertically on small screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .banner {
+    padding: var(--section-paddingY) 0.5rem; /* Reduces padding for extra-small screens */
+    min-height: 70vh; /* Adjust height for smaller devices */
+  }
 }

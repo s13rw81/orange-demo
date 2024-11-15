@@ -5,11 +5,13 @@
 {% endblock navigation %}
 {% block content %}
 <!-- Banner Start -->
+ <!-- Bootstrap JS and Popper.js -->
+
 <div class="second_banner">
   <div class="container px-4">
     <h1 class="sb_heading text-black">ORANGE is Always <br />the <span class="themeColor">Solution</span></h1>
     <p class="fw-light fz-eighteen" style="margin-top: 35px">Wir unsterstützen Dich dabei, die Energieeffizienz Deines <br />Gebäudes zu maximieren, CO<sub>2</sub>-Emissionen zu minimieren <br />und Nachhaltigkeit zu fördern.</p>
-    <a href=""><button class="banner_btn">Demo Starten</button></a>
+    <a href="javascript:void(0)"><button class="banner_btn btn btn-primary">Demo Starten</button></a>
   </div>
 </div>
 <!-- Banner End -->
@@ -38,12 +40,13 @@
             <p class="text-black ic_title">CO<sub>2</sub>-Bilanz</p>
           </div>
           <!-- Card -->
-          <div class="col icon_card">
-            <div class="icon blue d-flex align-items-center justify-content-center">
-              <i class="fa-regular fa-lightbulb"></i>
-            </div>
-            <p class="text-black ic_title">Sanierungs- <br />maßnahmen</p>
-          </div>
+          <!-- Modal Trigger Button -->
+              <div class="col icon_card">
+                <div class="icon blue d-flex align-items-center justify-content-center">
+                  <i class="fa-regular fa-lightbulb"></i>
+                </div>
+                <p class="text-black ic_title">Sanierungs- <br />maßnahmen</p>
+              </div>
           <!-- Card -->
           <div class="col icon_card">
             <div class="icon blue d-flex align-items-center justify-content-center">
@@ -539,8 +542,13 @@
           </p>
         </div>
       </div>
-    </div>
+</div>
     <!-- Data Section End -->
 
     <!-- Top Footer Start -->
 {% endblock content %}
+{% block footer %}
+{% include 'footer.html' %}
+{% endblock footer %}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
