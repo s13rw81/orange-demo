@@ -1,4 +1,5 @@
 /* Small Screen Monitor (1450px) */
+
 @media screen and (max-width: 1450px) {
   .nav-links {
     gap: 30px;
@@ -20,6 +21,7 @@
   .nb_heading {
     padding-left: 355px;
   }
+ 
 }
 
 /* Smaller Screen Monitor (1250px) */
@@ -650,4 +652,43 @@
   top: 50%;
   transform: translateY(-50%);
   height: 75px;
+}
+.text-head{
+  color:#fd7e14;
+  margin-left: -12.4rem !important;
+} 
+/**animated pill **/
+/* Style for the text pill */
+.text-pill {
+  background-color: white;
+  color: #fd7e14;
+  padding: 5px 15px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: center;
+  animation: pulse 2s infinite;
+}
+
+/* Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 5px rgba(255, 87, 34, 0.5);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 87, 34, 0.8);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 5px rgba(255, 87, 34, 0.5);
+  }
+}
+
+/* Hide the pill on larger screens */
+@media (min-width: 992px) {
+  .text-pill {
+    display: none;
+  }
 }
