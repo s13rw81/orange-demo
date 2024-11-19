@@ -692,3 +692,31 @@
     display: none;
   }
 }
+@media screen and (min-width: 600px) and (max-width: 900px) {
+
+  .ftag{
+    display: none;
+  }
+  .sb_heading {
+    
+    font-weight: 800;
+    line-height: 79%;
+    margin-top: 34px;
+  }
+  .nb_heading {
+    padding-left: 0;
+    font-size: 55px;
+    margin-top: 78px;
+    line-height: 85%;
+  }
+  .navbar-collapse {
+    flex-basis: 106%;
+    flex-grow: 1;
+    margin-top: 32px;
+    align-items: center;
+  }
+  .soln{
+    align-items: center !important;
+    margin-top: -27px;
+  }
+}
