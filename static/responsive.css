@@ -692,7 +692,7 @@
     display: none;
   }
 }
-@media screen and (min-width: 600px) and (max-width: 900px) {
+@media screen and (min-width: 600px) and (max-width: 940px) {
 
   .ftag{
     display: none;
@@ -719,4 +719,87 @@
     align-items: center !important;
     margin-top: -27px;
   }
+  /* .stag{
+    display: flex;
+    margin-left: 101px;
+    margin-right: -212px;
+    flex-direction: row-reverse;
+    margin-top: -63px;
+  } */
+  .pixel{
+    line-height: 73% !important;
+  }
 }
+/**Phone horizontal view**/
+/* CSS for mobile landscape orientation */
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+  .navbar-content {
+      flex-direction: row; /* Ensure horizontal layout */
+      justify-content: space-around; /* Space items evenly */
+      padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .nav-item {
+      margin: 0 5px; /* Reduce margin for tighter spacing */
+      flex: 1; /* Make items spread evenly */
+      text-align: center; /* Center-align text */
+  }
+
+  .nav-link {
+      font-size: 0.9rem; /* Adjust font size for readability */
+      padding: 5px 10px; /* Adjust padding */
+  }
+
+  .htag .text-head {
+      font-size: 0.8rem; /* Scale down heading text */
+  }
+
+  .dropdown-menu {
+      font-size: 0.8rem; /* Adjust dropdown menu font size */
+      width: 100%; /* Full-width dropdown for mobile */
+  }
+
+  .banner_btn {
+      font-size: 0.85rem; /* Adjust button size */
+      padding: 5px 15px; /* Adjust button padding */
+  }
+
+  .text-pill {
+      font-size: 0.75rem; /* Scale down text for small screens */
+      text-align: center;
+      display: block; /* Ensure it appears on a new line */
+  }
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0px;
+    list-style: none;
+    margin-top: -55px;
+  }
+  a#smallScreenDropdown {
+    margin-right: 86px;
+  }
+  i#icon {
+    margin-right: 1px;
+    margin-left: 3px;
+  }
+  .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    margin-left: -12px;
+  }
+  .galaxys{
+    margin-top: -22px !important;
+  }
+}
+/**Phone horizontal view**/
