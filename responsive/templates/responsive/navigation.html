@@ -30,32 +30,32 @@
 
             <!-- Collapsible Navbar content (right side) -->
             <div class="collapse navbar-collapse justify-content-end navbar-content" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-start bg-light">
+                <ul class="navbar-nav ms-auto align-items-start bg-light htag">
                     <li class="nav-item ms-2 pe-4">
-                        <small><span class="text-head ftag">Orange is always the solution</span></small>
+                        <small><span class="text-head ftag txthead stag">Orange is always the solution</span></small>
                     </li>
-                    <li class="nav-item ms-2 pe-4">
+                    <li class="nav-item ms-2 pe-4 pixel">
                         <a href="{% url 'index' %}" class="nav-link {% if request.path == '/index/' %}active{% endif %}">Startseite</a>
                     </li>
-                    <li class="nav-item ms-2 pe-4">
+                    <li class="nav-item ms-2 pe-4 pixel">
                         <a href="{% url 'solution' %}" class="nav-link {% if request.path == '/solution/' %}active{% endif %}">Loesung</a>
                     </li>
-                    <li class="nav-item ms-2 pe-4">
+                    <li class="nav-item ms-2 pe-4 pixel">
                         <a href="{% url 'energy' %}" class="nav-link {% if request.path == '/energy/' or request.path == '/construction/' %}active{% endif %}">Sanierung</a>
                     </li>
-                    <li class="nav-item ms-2 pe-4">
+                    <li class="nav-item ms-2 pe-4 pixel">
                         <a href="{% url 'sustainability' %}" class="nav-link {% if request.path == '/sustainability/' %}active{% endif %}">Nachhaltigkeit</a>
                     </li>
-                    <li class="nav-item ms-2 pe-4">
+                    <li class="nav-item ms-2 pe-4 pixel">
                         <a href="{% url 'prices' %}" class="nav-link {% if request.path == '/prices/' %}active{% endif %}">Preise</a>
                     </li>
-                    <li class="nav-item ms-2 pe-4">
+                    <li class="nav-item ms-2 pe-4 pixel">
                         <a href="{% url 'newspaper' %}" class="nav-link {% if request.path == '/newspaper/' %}active{% endif %}">News</a>
                     </li>
                    
                     <!-- Conditional rendering for authenticated users -->
                     {% if user.is_authenticated %}
-                        <li class="nav-item ms-2 dropdown pe-4">
+                        <li class="nav-item ms-2 dropdown pe-4 pixel">
                             <a class="nav-link dropdown-toggle {% if request.path == '/account/' %}active{% endif %}" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Account
                             </a>
@@ -66,17 +66,17 @@
                                 <li><a class="dropdown-item" href="">Logout</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item ms-2 pe-4">
+                        <li class="nav-item ms-2 pe-4 pixel">
                             <a href="" class="btn btn-primary me-3 banner_btn" role="button" aria-disabled="true">Demo Starten</a>
                         </li>
                     {% else %}
-                        <li class="nav-item ms-2 pe-4">
+                        <li class="nav-item ms-2 pe-4 pixel">
                             <a href="" class="nav-link {% if request.path == '/login/' %}active{% endif %}">Login</a>
                         </li>
-                        <li class="nav-item ms-2 pe-4">
+                        <li class="nav-item ms-2 pe-4 pixel">
                             <a href="" class="btn btn-primary me-3 btn-sm" role="button" aria-disabled="true">Demo Starten</a>
                         </li><br>
-                        <li class="nav-item ms-2 pe-4"><span class="text-pill d-lg-none">Orange is always the solution</span>
+                        <li class="nav-item ms-2 pe-4"><span class="text-pill d-lg-none galaxys">Orange is always the solution</span>
                         </li><br>
                     {% endif %}
 
