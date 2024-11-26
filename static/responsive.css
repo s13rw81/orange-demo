@@ -667,11 +667,11 @@
   font-size: 0.9rem;
   font-weight: bold;
   text-align: center;
-  animation: pulse 2s infinite;
+  /* animation: pulse 2s infinite; */
 }
 
 /* Animation */
-@keyframes pulse {
+/* @keyframes pulse {
   0% {
     transform: scale(1);
     box-shadow: 0 0 5px rgba(255, 87, 34, 0.5);
@@ -684,7 +684,7 @@
     transform: scale(1);
     box-shadow: 0 0 5px rgba(255, 87, 34, 0.5);
   }
-}
+} */
 
 /* Hide the pill on larger screens */
 @media (min-width: 992px) {
